@@ -1,0 +1,143 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #036e3c;
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
+}
+/* Header */
+.header {
+  background-color: #004080;
+  color: white;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo span {
+  margin-left: 0.5rem;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav ul li {
+  position: relative;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: #333;
+  list-style: none;
+  padding: 0.5rem 1rem;
+  display: none;
+  border: 1px solid #ddd;
+}
+
+.nav li:hover .dropdown {
+  display: block;
+}
+
+.nav .dropdown li {
+  margin: 0.5rem 0;
+}
+
+.nav .dropdown a {
+  color: #004080;
+}
+.disabled-link {
+  pointer-events: none; /* Отключает клики */
+  color: gray !important; /* Меняет цвет, чтобы показать, что ссылка недоступна */
+  text-decoration: none;
+}
+
+.temperature-topic {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f7fa;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.temperature-topic h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #2a72d8;
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 22px;
+  color: #1e56a0;
+  border-bottom: 2px solid #2a72d8;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+section p,
+section ul {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+ul ul {
+  list-style-type: circle;
+  margin-top: 5px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}

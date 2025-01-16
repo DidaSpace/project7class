@@ -1,0 +1,169 @@
+/* Общие настройки */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #05b161;
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
+}
+
+/* Header */
+.header {
+  background-color: #004080;
+  color: white;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header .logo span {
+  margin-left: 0.5rem;
+}
+
+.header .nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.header .nav ul li {
+  position: relative;
+}
+
+.header .nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.header .nav .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: #333;
+  list-style: none;
+  padding: 0.5rem 1rem;
+  display: none;
+  border: 1px solid #ddd;
+}
+
+.header .nav li:hover .dropdown {
+  display: block;
+}
+
+.header .nav .dropdown li {
+  margin: 0.5rem 0;
+}
+
+.header .nav .dropdown a {
+  color: #004080;
+}
+
+.disabled-link {
+  pointer-events: none; /* Отключает клики */
+  color: gray !important; /* Меняет цвет, чтобы показать, что ссылка недоступна */
+  text-decoration: none;
+}
+
+/* Основной контент */
+.main {
+  padding: 20px;
+}
+
+/* Тематические разделы */
+.topics {
+  background: linear-gradient(
+    to bottom,
+    #1e3a8a,
+    #3b82f6
+  ); /* Темно-синий к светло-синему */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.topics h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.topics p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.topic-cards {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Гибкая сетка */
+  gap: 1rem;
+  justify-items: center;
+}
+
+.topic-cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004080; /* Тёмно-синий */
+  color: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.topic-cards .card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.topic-cards .card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.topic-cards .card button {
+  background-color: #3b82f6; /* Светло-синий */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.topic-cards .card button:hover {
+  background-color: #0066cc;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
